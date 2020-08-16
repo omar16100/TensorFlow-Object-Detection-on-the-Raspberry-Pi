@@ -4,13 +4,9 @@
 
 ![Living Room](doc/Picamera_livingroom.png)
 
-*Update 10/13/19:* Setting up the TensorFlow Object Detection API on the Pi is much easier now! Two major updates: 1) TensorFlow can be installed simply using "pip3 install tensorflow". 2) The protobuf compiler (protoc) can be installed using "sudo apt-get protobuf-compiler. I have updated Step 3 and Step 4 to reflect these changes.
-
-Bonus: I made a Pet Detector program (Pet_detector.py) that sends me a text when it detects when my cat wants to be let outside! It runs on the Raspberry Pi and uses the TensorFlow Object Detection API. You can use the code as an example for your own object detection applications. More info is available at [the bottom of this readme](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi#bonus-pet-detector).
-
 ## Introduction
 
-This guide provides step-by-step instructions for how to set up TensorFlow’s Object Detection API on the Raspberry Pi. By following the steps in this guide, you will be able to use your Raspberry Pi to perform object detection on live video feeds from a Picamera or USB webcam. Combine this guide with my <link> tutorial on how to train your own neural network to identify specific objects</link>, and you use your Pi for unique detection applications such as:
+This guide provides step-by-step instructions for how to set up TensorFlow’s Object Detection API on the Raspberry Pi. By following the steps in this guide, you will be able to use your Raspberry Pi to perform object detection on live video feeds from a Picamera or USB webcam. Combine this guide with my tutorial on how to train your own neural network to identify specific objects, and you use your Pi for unique detection applications such as:
 
 * Detecting if bunnies are in your garden eating your precious vegetables
 * Telling you if there are any parking spaces available in front of your apartment building
