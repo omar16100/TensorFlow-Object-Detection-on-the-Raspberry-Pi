@@ -6,17 +6,7 @@
 
 ## Introduction
 
-This guide provides step-by-step instructions for how to set up TensorFlow’s Object Detection API on the Raspberry Pi. By following the steps in this guide, you will be able to use your Raspberry Pi to perform object detection on live video feeds from a Picamera or USB webcam. Combine this guide with my tutorial on how to train your own neural network to identify specific objects, and you use your Pi for unique detection applications such as:
-
-* Detecting if bunnies are in your garden eating your precious vegetables
-* Telling you if there are any parking spaces available in front of your apartment building
-* [Beehive bee counter](http://matpalm.com/blog/counting_bees/)
-* [Counting cards at the blackjack table](https://hackaday.io/project/27639-rainman-20-blackjack-robot)
-* And anything else you can think of!
-
-Here's a YouTube video I made that walks through this guide!
-
-[![Link to my YouTube video!](https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi/master/doc/YouTube_video.png)](https://www.youtube.com/watch?v=npZ-8Nj1YwY)
+This guide provides step-by-step instructions for how to set up TensorFlow’s Object Detection API on the Raspberry Pi. By following the steps in this guide, you will be able to use your Raspberry Pi to perform object detection on live video feeds from a Picamera or USB webcam.
 
 The guide walks through the following steps:
 
