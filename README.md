@@ -212,3 +212,18 @@ TODO : to crawl??
 * Make requirements.txt / requirements.ssh
 
 ## References
+
+* [IBM : Create An Image Dataset From Object Classification](https://www.ibm.com/support/knowledgecenter/SSWQ2D_1.1.0/us/create-dataset-image-object-classification.html)
+* [pyimagesearch : How to (quickly) build a deep learning image dataset](https://www.pyimagesearch.com/2018/04/09/how-to-quickly-build-a-deep-learning-image-dataset/)
+* [TDS : How to Create Your Own Image Dataset for Deep Learning](https://towardsdatascience.com/how-to-create-your-own-image-dataset-for-deep-learning-b53f1c22c443)
+* [Medium : Build Image Dataset from Scratch!](https://medium.com/ai%C2%B3-theory-practice-business/build-image-dataset-from-scratch-7752e9e22162)
+* [Kaggle : How to create a new dataset from images](https://www.kaggle.com/getting-started/40586)
+* [iconof : How to create an image dataset for Transfer Learning](https://iconof.com/how-to-create-an-image-dataset-for-transfer-learning/)
+* [mc.ai : How to Create an Image Dataset from Google Images](https://mc.ai/how-to-create-an-image-dataset-from-google-images/)
+* [Debugger Cafe : Create Your Own Deep Learning Image Dataset](https://debuggercafe.com/create-your-own-deep-learning-image-dataset/)
+* [SOF : How to build an image dataset for CNN?](https://datascience.stackexchange.com/questions/48390/how-to-build-an-image-dataset-for-cnn)
+* [wizardofexcel : Build an Image Dataset in TensorFlow](https://wizardforcel.gitbooks.io/tensorflow-examples-aymericdamien/content/5.1_build_an_image_dataset.html)
+* [GH :  tomahim/py-image-dataset-generator](https://github.com/tomahim/py-image-dataset-generator)
+* [roboflow.ai : How to Create a Synthetic Dataset for Computer Vision](https://blog.roboflow.ai/how-to-create-a-synthetic-dataset-for-computer-vision/)
+* [mxnet : Image Classification - How to Use Your Own Datasets](https://autogluon.mxnet.io/tutorials/image_classification/kaggle.html)
+* [morioh : Create A Synthetic Image Dataset - The What, The Why and The How](https://morioh.com/p/c87a2e51e8a0)
