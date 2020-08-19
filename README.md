@@ -1,4 +1,4 @@
-# Tutorial to set up TensorFlow Object Detection API on the Raspberry Pi
+# Development Steps To Set Up TensorFlow Object Detection API On The Raspberry Pi (And Dataset Details For Plant Disease Detections)
 
 `Work in progress`
 
@@ -33,11 +33,7 @@ sudo apt-get dist-upgrade
 
 Depending on how long it’s been since you’ve updated your Pi, the upgrade could take anywhere between a minute and an hour.
 
-![Update](doc/update.png)
-
 ### 2. Install TensorFlow
-
-*Update 10/13/19: Changed instructions to just use "pip3 install tensorflow" rather than getting it from lhelontra's repository. The old instructions have been moved to this guide's appendix.*
 
 Next, we’ll install TensorFlow. The download is rather large (over 100MB), so it may take a while. Issue the following command:
 
@@ -159,7 +155,7 @@ If you’re using a Picamera, make sure it is enabled in the Raspberry Pi config
 Download the Object_detection_picamera.py file into the object_detection directory by issuing:
 
 ```Shell
-wget https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi/master/Object_detection_picamera.py
+wget https://raw.githubusercontent.com/omar16100/TensorFlow-Object-Detection-on-the-Raspberry-Pi/master/Object_detection_picamera.py
 ```
 
 Run the script by issuing:
@@ -176,11 +172,15 @@ python3 Object_detection_picamera.py --usbcam
 
 Once the script initializes (which can take up to 30 seconds), you will see a window showing a live view from your camera. Common objects inside the view will be identified and have a rectangle drawn around them.
 
-![Kitchen](doc/kitchen.png)
+### TODO : Add common objects image
 
 With the SSDLite model, the Raspberry Pi 3 performs fairly well, achieving a frame rate higher than 1FPS. This is fast enough for most real-time object detection applications.
 
-You can also use a model you trained yourself [(here's a guide that shows you how to train your own model)](https://www.youtube.com/watch?v=Rgpfk6eYxJA) by adding the frozen inference graph into the object_detection directory and changing the model path in the script. You can test this out using my playing card detector model (transferred from ssd_mobilenet_v2 model and trained on TensorFlow v1.5) located at [this dropbox link](https://www.dropbox.com/s/27avwicywbq68tx/card_model.zip?dl=0). Once you’ve downloaded and extracted the model, or if you have your own model, place the model folder into the object_detection directory. Place the label_map.pbtxt file into the object_detection/data directory.
+You can also use a model you trained yourself [(here's a guide that shows you how to train your own model)](https://www.youtube.com/watch?v=Rgpfk6eYxJA) by adding the frozen inference graph into the object_detection directory and changing the model path in the script.
+
+Example of retraining for separate use case :
+
+Test this out by using playing card detector model (transferred from ssd_mobilenet_v2 model and trained on TensorFlow v1.5) located at [this dropbox link](https://www.dropbox.com/s/27avwicywbq68tx/card_model.zip?dl=0). Once you’ve downloaded and extracted the model, or if you have your own model, place the model folder into the object_detection directory. Place the label_map.pbtxt file into the object_detection/data directory.
 
 ![Directory](doc/directory.png)
 
@@ -194,7 +194,17 @@ Now, when you run the script, it will use your model rather than the SSDLite_Mob
 
 ![Cards](doc/cards.png)
 
-Thanks for following through this guide, I hope you found it useful. Good luck with your object detection applications on the Raspberry Pi!
+Thanks for following through this guide!
+
+## Dataset Collection For Plant Disease
+
+Related Reddit communities :
+
+* [r/whatplantisthis](https://www.reddit.com/r/whatplantisthis/)
+* [r/whatsthisplant](https://www.reddit.com/r/whatsthisplant/)
+* [r/plantidentification](https://www.reddit.com/r/PlantIdentification/)
+
+TODO : to crawl??
 
 ## TODO
 
