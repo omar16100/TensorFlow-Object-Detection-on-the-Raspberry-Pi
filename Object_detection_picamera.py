@@ -219,5 +219,7 @@ elif camera_type == 'usb':
 
     camera.release()
 
+## Disconnect 
+
 cv2.destroyAllWindows()
 
